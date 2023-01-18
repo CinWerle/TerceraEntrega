@@ -1,0 +1,26 @@
+#menu {
+    background-color: $mainColor;
+    display: flex;
+    justify-content: space-between;
+    ul{
+        list-style: none;
+        li {
+            color: $secondaryColor;
+            a{
+                color: $secondaryColor;
+                font-family: $mainFont;
+                text-decoration: none;
+                &:hover{
+                    color: $extraColor;
+                }
+            }
+        } 
+    }
+
+}
+
+#menu img {
+    width: 150px;
+}
+
+

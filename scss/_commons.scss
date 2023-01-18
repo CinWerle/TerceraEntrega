@@ -1,0 +1,122 @@
+h1,h2,h3,h4,li {
+    font-family: $mainFont;
+    color: $secondaryColor;
+}
+
+p {
+    font-family: $mainFont;
+    color: $tertiaryColor;
+}
+
+body, form {
+    background-color: $mainColor;
+}
+
+button {
+    width:100px;
+    height: 30px;
+    background: linear-gradient(to top, orange, yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: black;
+    &:hover {
+        background-image: linear-gradient(to bottom, orange, yellow);
+    }
+}
+
+.seguinos {
+    background-color: $mainColor;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    //nosotros
+  
+
+    .container>.header, .container>.content, .container>.sidebar, .container>.footer, .container>div {
+    
+        padding: 20px;
+        border: 1px solid $secondaryColor; }
+    
+        .container>.header, .container>.footer {
+            grid-column: 1/-1;
+            background-color: $mainColor; }    
+    
+            .container>.content {
+                grid-column: span 3;
+                grid-row: span 4;
+            }
+            
+            .content>.article {
+                background: $mainColor;
+                padding: 20px;
+                margin-top: 5px;
+            }
+            
+            .content .article h1,
+            .content .article p {
+                padding: 10px;
+            }
+            
+            .container>.sidebar {
+                grid-column: span 2;
+                grid-row: span 4;
+                background: $mainColor;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .container .sidebar img {
+                display: block;
+                width: 100%;
+                margin-top: 5px;
+            }
+    
+
+            main {
+                background-color: $mainColor;
+                justify-content: center;
+                text-align: start;    
+                .fondo-registro{
+                    background-image: url(../img/headers/login.webp);
+                    
+                }  .login {
+                    font-family: $mainFont;
+                    color: $secondaryColor;
+                    width: 400px;
+                    padding: 30px;
+                    margin: auto;
+                    margin-top: 20px;
+                    border-radius: 4px;
+                    box-shadow: 0px 10px 37px;
+                }   
+              } 
+
+              form {
+                color: $secondaryColor;
+                width: 450px;
+                margin: auto;
+                padding: 10px 20px;
+                box-sizing: border-box;
+                margin-top: 20px;
+            }
+            
+            .card {
+            background-color: $cardColor;
+            .btn-oferta {
+                background-color: $mainColor;
+                color: $cardColor;
+                &:hover{
+                    color: $tertiaryColor;
+                }
+            }
+
+        }
+
+        .accordion-body {
+            background-color: $cardColor;
+            font-family: $mainFont;
+        }

@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+h1, h2, h3, h4, li {
+  font-family: "Nunito", sans-serif;
+  color: orange;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  color: red;
+}
+
+body, form {
+  background-color: black;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  background: linear-gradient(to top, orange, yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: black;
+}
+button:hover {
+  background-image: linear-gradient(to bottom, orange, yellow);
+}
+
+.seguinos {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container > .header, .container > .content, .container > .sidebar, .container > .footer, .container > div {
+  padding: 20px;
+  border: 1px solid orange;
+}
+
+.container > .header, .container > .footer {
+  grid-column: 1/-1;
+  background-color: black;
+}
+
+.container > .content {
+  grid-column: span 3;
+  grid-row: span 4;
+}
+
+.content > .article {
+  background: black;
+  padding: 20px;
+  margin-top: 5px;
+}
+
+.content .article h1,
+.content .article p {
+  padding: 10px;
+}
+
+.container > .sidebar {
+  grid-column: span 2;
+  grid-row: span 4;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .sidebar img {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+}
+
+main {
+  background-color: black;
+  justify-content: center;
+  text-align: start;
+}
+main .fondo-registro {
+  background-image: url(../img/headers/login.webp);
+}
+main .login {
+  font-family: "Nunito", sans-serif;
+  color: orange;
+  width: 400px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 10px 37px;
+}
+
+form {
+  color: orange;
+  width: 450px;
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: rgb(247, 247, 166);
+}
+.card .btn-oferta {
+  background-color: black;
+  color: rgb(247, 247, 166);
+}
+.card .btn-oferta:hover {
+  color: red;
+}
+
+.accordion-body {
+  background-color: rgb(247, 247, 166);
+  font-family: "Nunito", sans-serif;
+}
+
+#menu {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+#menu ul {
+  list-style: none;
+}
+#menu ul li {
+  color: orange;
+}
+#menu ul li a {
+  color: orange;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+}
+#menu ul li a:hover {
+  color: yellow;
+}
+
+#menu img {
+  width: 150px;
+}
+
+/*# sourceMappingURL=styles.css.map */
